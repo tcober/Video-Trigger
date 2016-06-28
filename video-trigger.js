@@ -5,7 +5,6 @@ var bubble = function(start, finish) {
 
 var videoTrigger = function() {
   this.video = $('.demonstration-vid');
-  /* THIS IS WHERE YOU ADD THE TIMING. SIMPLY ADD A NEW BUBBLE. THE FIRST ARGUMENT IS THE STARTING TIME. THE SECOND IS THE END TIME */
   this.bubbles = [
     new bubble(18, 22),
     new bubble(22, 26),
@@ -37,4 +36,4 @@ videoTrigger.prototype.run = function() {
 $(document).ready(function() {
   vid = new videoTrigger();
   vid.run();
-}
+});
